@@ -1,9 +1,7 @@
-function [ output_args ] = mergedisplay( file1, file2, shift )
+function [ output_args ] = mergedisplay( img1, img2, shift )
 %MERGEDISPLAY Summary of this function goes here
 %   Detailed explanation goes here
 
-    img1 = imread(file1);
-    img2 = imread(file2);
     x = shift(1);
     y = shift(2);
     
@@ -28,8 +26,11 @@ function [ output_args ] = mergedisplay( file1, file2, shift )
         end
     end
     
+    figure(1);
+    title('before');
     imshow(merge1);
-    pause(3);
+    figure(2);
+    title('after');
     imshow(merge2);
 
 end

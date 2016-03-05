@@ -1,14 +1,9 @@
-function [ out ] = matching( file1, file2 )
+function [ out ] = matching( img1, img2 )
 %MATCHING Summary of this function goes here
 %   Detailed explanation goes here
 
 
-    rang = 50;
-    img1 = imread(file1);
-    img2 = imread(file2);
-    %imshow(img1);
-    %imshow(img2);
-    
+    rang = 10;
     minsum = 1e10;
     
     for x=-rang:rang
