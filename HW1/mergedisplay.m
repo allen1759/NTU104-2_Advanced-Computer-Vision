@@ -26,11 +26,8 @@ function [ output_args ] = mergedisplay( img1, img2, shift )
         end
     end
     
-    figure(1);
-    title('before');
     imshow(merge1);
-    figure(2);
-    title('after');
+    pause(3);
     imshow(merge2);
 
 end
